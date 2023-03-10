@@ -25,3 +25,12 @@ CREATE TABLE "etapes"
     adresse VARCHAR(255) NOT NULL,
     FOREIGN KEY (id) REFERENCES "trajets" (id)
 );
+
+CREATE TABLE "preferences"
+(
+    lieu VARCHAR(255) NOT NULL,
+    aimer BOOLEAN     NOT NULL,
+    id   SERIAL       NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    FOREIGN KEY (email) REFERENCES "user" (email)
+);
