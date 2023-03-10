@@ -6,3 +6,8 @@ CREATE TABLE "user" (
   password VARCHAR(255) NOT NULL,
   PRIMARY KEY (email)
 );
+
+
+CREATE TABLE "itineraire" (
+  
+);
