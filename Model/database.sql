@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS "user", "trajets" CASCADE;
+DROP TABLE IF EXISTS "user", "trajets", "etapes" CASCADE;
 
 CREATE TABLE "user"
 (
@@ -16,4 +16,11 @@ CREATE TABLE "trajets"
     date    DATE         NOT NULL,
     email   VARCHAR(255) NOT NULL,
     FOREIGN KEY (email) REFERENCES "user" (email)
+);
+
+CREATE TABLE "etapes"
+(
+    id SERIAL PRIMARY KEY,
+    adresse VARCHAR(255) NOT NULL,
+    FOREIGN KEY (id) REFERENCES "trajets" (id)
 );
