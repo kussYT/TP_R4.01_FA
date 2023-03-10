@@ -11,6 +11,7 @@ CREATE TABLE "user"
 CREATE TABLE "trajets"
 (
     id      SERIAL PRIMARY KEY,
+    favoris BOOLEAN      NOT NULL,
     depart  VARCHAR(255) NOT NULL,
     arrivee VARCHAR(255) NOT NULL,
     date    DATE         NOT NULL,
@@ -20,7 +21,7 @@ CREATE TABLE "trajets"
 
 CREATE TABLE "etapes"
 (
-    id SERIAL PRIMARY KEY,
+    id      SERIAL PRIMARY KEY,
     adresse VARCHAR(255) NOT NULL,
     FOREIGN KEY (id) REFERENCES "trajets" (id)
 );
