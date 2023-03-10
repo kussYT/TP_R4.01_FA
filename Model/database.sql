@@ -14,7 +14,6 @@ CREATE TABLE "trajets"
     depart  VARCHAR(255) NOT NULL,
     arrivee VARCHAR(255) NOT NULL,
     date    DATE         NOT NULL,
-    prix    INTEGER      NOT NULL,
     email   VARCHAR(255) NOT NULL,
     FOREIGN KEY (email) REFERENCES "user" (email)
 );
