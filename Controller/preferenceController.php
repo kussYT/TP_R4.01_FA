@@ -1,4 +1,5 @@
 <?php
+require_once 'preferenceModel.php';
 
 class preferenceController
 {
