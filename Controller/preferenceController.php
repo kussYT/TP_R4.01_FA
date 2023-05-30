@@ -1,13 +1,17 @@
 <?php
-class preferenceController {
+
+class preferenceController
+{
     private $preferenceModel;
 
-    public function __construct($preferenceModel) {
+    public function __construct($preferenceModel)
+    {
         $this->preferenceModel = $preferenceModel;
     }
 
     // Méthode pour traiter les préférences renseignées par l'utilisateur lors de la saisie d'un trajet
-    public function processPreferencesAction($preferences) {
+    public function processPreferencesAction($preferences)
+    {
         // Appeler la méthode du modèle pour traiter les préférences
         $processedPreferences = $this->preferenceModel->processPreferences($preferences);
 
