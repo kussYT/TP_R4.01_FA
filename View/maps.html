@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Carte</title>
+    <!-- Inclure les feuilles de style et les scripts nécessaires -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/maps.js"></script>
 </head>
 <body>
+<h1>Carte</h1>
 
+<!-- Afficher la carte ici -->
+<div id="map"></div>
+
+<!-- Bouton pour afficher la position courante -->
+<button onclick="getCurrentPosition()">Afficher Position Courante</button>
+
+<!-- Formulaire pour entrer une destination -->
+<form>
+    <label for="destination"></label><input type="text" id="destination" placeholder="Entrer une destination">
+    <button onclick="getDirection()">Obtenir Trajet</button>
+</form>
+
+<!-- Afficher les étapes du trajet ici -->
+<div id="etapes"></div>
+
+<!-- Autres éléments et fonctionnalités de la vue -->
 </body>
 </html>
