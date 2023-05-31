@@ -105,3 +105,10 @@ button[type="submit"]:hover {
 .hide-bubble {
     visibility: hidden;
 }
+html,
+body,
+#my-map {
+    width: 70%;
+    height: 70%;
+    margin: 0;
+}

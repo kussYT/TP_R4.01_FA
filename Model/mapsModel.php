@@ -43,14 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $destinationCoordinates = $map->getCoordinates($destination);
     }
 
-    if ($departureCoordinates && $destinationCoordinates) {
-        echo "Coordonnées de départ : latitude = " . $departureCoordinates['latitude'] . ", longitude = " . $departureCoordinates['longitude'] . "<br>";
-        echo "Coordonnées d'arrivée : latitude = " . $destinationCoordinates['latitude'] . ", longitude = " . $destinationCoordinates['longitude'];
-    } elseif (!$departureCoordinates && !$destinationCoordinates) {
+    if (!$departureCoordinates && !$destinationCoordinates) {
         echo "Veuillez entrer les villes de départ et d'arrivée.";
     } elseif (!$departureCoordinates) {
         echo "Impossible d'obtenir les coordonnées de départ.";
-    } else {
+    } elseif(!$destinationCoordinates) {
         echo "Impossible d'obtenir les coordonnées d'arrivée.";
     }
 }
