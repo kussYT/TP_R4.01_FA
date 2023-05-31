@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/maps.js"></script>
 </head>
-<body>
+<body class="animated-background">
 <h1>Carte</h1>
 <!-- Afficher la carte ici -->
 <div id="map"></div>
