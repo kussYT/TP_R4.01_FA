@@ -28,6 +28,26 @@ function generateBubbles() {
     }
 }
 
+const radioButtons = document.querySelectorAll('.radio-button input[type="radio"]');
+
+radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener('change', function() {
+        const radioGroup = this.name;
+        const radioButtonsInGroup = document.querySelectorAll(`input[name="${radioGroup}"]`);
+
+        radioButtonsInGroup.forEach(function(btn) {
+            const parent = btn.closest('.radio-button');
+            if (btn.checked) {
+                parent.classList.add('selected');
+                parent.classList.remove('not-selected');
+            } else {
+                parent.classList.add('not-selected');
+                parent.classList.remove('selected');
+            }
+        });
+    });
+});
+
 window.addEventListener('load', function () {
     generateBubbles();
 });

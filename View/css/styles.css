@@ -116,11 +116,6 @@ button[type="submit"]:hover {
     visibility: hidden;
 }
 
-/*.radio-button {*/
-/*    justify-content: space-between;*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
 .radio-button {
     display: flex;
     align-items: center;
@@ -168,6 +163,7 @@ button[type="submit"]:hover {
 
 .radio-button input[type="radio"]:checked + label::before {
     border-color: #007bff;
+    background-color: #007bff;
 }
 
 .radio-button label:hover {
@@ -176,30 +172,4 @@ button[type="submit"]:hover {
 
 .radio-button label:hover::before {
     border-color: #007bff;
-}
-
-.middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.radio-button.selected .icon {
-    color: #007bff;
-}
-
-.radio-button.not-selected .icon {
-    color: #ccc;
-}
-
-.radio-button.selected .text {
-    color: #007bff;
-}
-
-.radio-button.not-selected .text {
-    color: #000;
-}
-
-.radio-button.checked .icon {
-    color: #007bff;
 }
