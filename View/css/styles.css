@@ -96,6 +96,47 @@ button[type="submit"]:hover {
     }
 }
 
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-button input[type="radio"] + label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-button input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+.radio-button2 input[type="radio"] {
+    display: none;
+}
+
+.radio-button2 input[type="radio"] + label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.radio-button2 input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
 .bubble {
     position: absolute;
     width: 40px;
