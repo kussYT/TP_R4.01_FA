@@ -3,6 +3,7 @@
 <head>
     <title>Carte</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/maps.js"></script>
 </head>
 <body class="animated-background">
@@ -14,20 +15,20 @@
     <input type="text" name="departure" id="departure" placeholder="Entrer l'endroit de départ">
     <label for="destination">Arrivée :</label>
     <input type="text" name="destination" id="destination" placeholder="Entrer l'endroit d'arrivée">
-    <label>
-        <input type="radio" name="MoyenDeLocomotion" value="walk" checked>
-        A pied
+    <div class="middle">
+    <label class="radio-button">
+        <input type="radio" id="walk" name="MoyenDeLocomotion" value="walk" checked>
+        <label for="walk"><i class="fas fa-walking"></i></label>
     </label>
-    <br>
-    <label>
-        <input type="radio" name="MoyenDeLocomotion" value="drive">
-        Voiture
+    <label class="radio-button">
+        <input type="radio" id="drive" name="MoyenDeLocomotion" value="drive">
+        <label for="drive"><i class="fas fa-car"></i></label>
     </label>
-    <br>
-    <label>
-        <input type="radio" name="MoyenDeLocomotion" value="bicycle">
-        A vélo
+    <label class="radio-button">
+        <input type="radio" id="bicycle" name="MoyenDeLocomotion" value="bicycle">
+        <label for="bicycle"><i class="fas fa-bicycle"></i></label>
     </label>
+    </div>
     <button type="submit">Obtenir Trajet</button>
 </form>
 <div id="etapes">
