@@ -66,6 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     var arriveLatitude = <?php echo $destinationCoordinates['latitude']; ?>;
     var arriveLongitude = <?php echo $destinationCoordinates['longitude']; ?>;
 
+    var moyenDeLocomation = "<?php echo $_POST["MoyenDeLocomotion"]; ?>";
+
     // The Leaflet map Object
 
     var mapLatitude = (departLatitude + arriveLatitude) / 2;
@@ -111,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    fetch(`https://api.geoapify.com/v1/routing?waypoints=${fromWaypoint.join(',')}|${toWaypoint.join(',')}&mode=drive&apiKey=${myAPIKey}`).then(res => res.json()).then(result => {
+    fetch(`https://api.geoapify.com/v1/routing?waypoints=${fromWaypoint.join(',')}|${toWaypoint.join(',')}&mode=${moyenDeLocomation}&apiKey=${myAPIKey}`).then(res => res.json()).then(result => {
 
         // Note! GeoJSON uses [longitude, latutude] format for coordinates
         L.geoJSON(result, {

@@ -15,18 +15,18 @@
     <label for="destination">Arrivée :</label>
     <input type="text" name="destination" id="destination" placeholder="Entrer l'endroit d'arrivée">
     <label>
-        <input type="radio" name="option" value="option1" checked>
-        Option 1
+        <input type="radio" name="MoyenDeLocomotion" value="walk" checked>
+        A pied
     </label>
     <br>
     <label>
-        <input type="radio" name="option" value="option2">
-        Option 2
+        <input type="radio" name="MoyenDeLocomotion" value="drive">
+        Voiture
     </label>
     <br>
     <label>
-        <input type="radio" name="option" value="option3">
-        Option 3
+        <input type="radio" name="MoyenDeLocomotion" value="bicycle">
+        A vélo
     </label>
     <button type="submit">Obtenir Trajet</button>
 </form>
