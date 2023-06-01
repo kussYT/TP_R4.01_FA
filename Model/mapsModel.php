@@ -81,6 +81,3 @@ function creationTrajet()
     </script>
     <?php
 }
-
-?>
-
