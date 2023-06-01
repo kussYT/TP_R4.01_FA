@@ -12,7 +12,7 @@ function generateBubbles() {
         bubble.className = 'bubble';
 
         const left = getRandomNumber(0, 97);
-        const bottom = -40;
+        const bottom = 0;
         const color1 = getRandomNumber(0, 255);
         const color2 = getRandomNumber(0, 255);
         const color3 = getRandomNumber(0, 255);
