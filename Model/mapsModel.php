@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <link rel="stylesheet" href="../View/css/fichier2.css">
-<a href="../View/maps.php" class="bouton">Voir la carte</a>
+<a href="../View/maps.php" class="bouton">Retour</a>
 <div id="my-map"></div>
 <script>
     // Leaflet has native support for raster maps, So you can create a map with a few commands only!
