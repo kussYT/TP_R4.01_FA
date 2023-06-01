@@ -18,6 +18,20 @@
     <input type="text" name="departure" id="departure" placeholder="Entrer l'endroit de départ">
     <label for="destination">Arrivée :</label>
     <input type="text" name="destination" id="destination" placeholder="Entrer l'endroit d'arrivée">
+    <label>
+        <input type="radio" name="option" value="option1" checked>
+        Option 1
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="option" value="option2">
+        Option 2
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="option" value="option3">
+        Option 3
+    </label>
     <button type="submit">Obtenir Trajet</button>
 </form>
 <div id="etapes">
