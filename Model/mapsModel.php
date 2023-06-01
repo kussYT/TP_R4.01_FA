@@ -1,6 +1,7 @@
 <?php
 class Map
 {
+
     private $apiAccessKey;
 
     public function __construct($apiAccessKey)
@@ -55,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <link rel="stylesheet" href="../View/css/fichier2.css">
+<a href="../View/maps.php" class="bouton">Voir la carte</a>
 <div id="my-map"></div>
 <script>
     // Leaflet has native support for raster maps, So you can create a map with a few commands only!
@@ -65,7 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     var arriveLongitude = <?php echo $destinationCoordinates['longitude']; ?>;
 
     // The Leaflet map Object
-    const map = L.map('my-map').setView([arriveLatitude, departLongitude], 12);
+
+    var mapLatitude = (departLatitude + arriveLatitude) / 2;
+    var mapLongitude = (departLongitude + arriveLongitude) / 2;
+
+    const map = L.map('my-map').setView([mapLatitude, mapLongitude], 10);
 
     // The API Key provided is restricted to JSFiddle website
     // Get your own API Key on https://myprojects.geoapify.com
