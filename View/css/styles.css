@@ -41,6 +41,7 @@ form {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
+    z-index: 9999;
 }
 
 label {
@@ -71,6 +72,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
