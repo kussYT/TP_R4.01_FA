@@ -20,11 +20,11 @@ L.tileLayer(isRetina ? retinaUrl : baseUrl, {
 // calculate and display routing:
 // from 38.937165,-77.045590 (1920 Quincy Street Northwest, Washington, DC 20011, United States of America)
 const fromWaypoint = [window.departLatitude, window.departLongitude]; // latutude, longitude
-const fromWaypointMarker = L.marker(fromWaypoint).addTo(window.map).bindPopup();
+const fromWaypointMarker = L.marker(fromWaypoint).addTo(window.map).bindPopup(window.lieuDepart);
 
 // to 38.881152,-76.990693 (1125 G Street Southeast, Washington, DC 20003, United States of America)
 const toWaypoint = [arriveLatitude, arriveLongitude]; // latitude, longitude
-const toWaypointMarker = L.marker(toWaypoint).addTo(window.map).bindPopup();
+const toWaypointMarker = L.marker(toWaypoint).addTo(window.map).bindPopup(window.lieuArrive);
 
 
 const turnByTurnMarkerStyle = {

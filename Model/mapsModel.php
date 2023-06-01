@@ -74,6 +74,9 @@ function creationTrajet()
         window.mapLatitude = (departLatitude + arriveLatitude) / 2;
         window.mapLongitude = (departLongitude + arriveLongitude) / 2;
 
+        window.lieuDepart = "<?php echo $_POST["departure"]; ?>";
+        window.lieuArrive = "<?php echo $_POST["destination"]; ?>";
+
         window.map = L.map('my-map').setView([mapLatitude, mapLongitude], 10);
     </script>
     <?php
