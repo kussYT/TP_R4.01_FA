@@ -9,6 +9,10 @@
 <div id="bubble-container"></div>
 <h1>Carte</h1>
 <div id="map"></div>
+<button class="b1">Test</button>
+<button class="b2">Test</button>
+<button class="b3">Test</button>
+<button class="b4">Test</button>
 <form method="post" action="../Model/mapsModel.php">
     <label for="departure">Départ :</label>
     <input type="text" name="departure" id="departure" placeholder="Entrer l'endroit de départ">

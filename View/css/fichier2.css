@@ -8,8 +8,8 @@ body,
 
 .bouton {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 5%;
+    left: 5%;
     z-index: 9999;
     background-color: #4CAF50;
     color: #fff;

@@ -5,7 +5,7 @@ function getRandomNumber(min, max) {
 function generateBubbles() {
     const bubbleContainer = document.getElementById('bubble-container');
 
-    const numBubbles = 100;
+    const numBubbles = 20;
 
     for (let i = 0; i < numBubbles; i++) {
         const bubble = document.createElement('div');
@@ -28,28 +28,6 @@ function generateBubbles() {
     }
 }
 
-function hideBubblesOnFormScroll() {
-    const bubbleContainer = document.getElementById('bubble-container');
-    const form = document.querySelector('form');
-
-    window.addEventListener('scroll', function () {
-        const formBottom = form.getBoundingClientRect().bottom;
-
-        const bubbles = bubbleContainer.getElementsByClassName('bubble');
-        for (let i = 0; i < bubbles.length; i++) {
-            const bubble = bubbles[i];
-            const bubbleBottom = bubble.getBoundingClientRect().bottom;
-
-            if (bubbleBottom < formBottom) {
-                bubble.classList.add('hide-bubble');
-            } else {
-                bubble.classList.remove('hide-bubble');
-            }
-        }
-    });
-}
-
 window.addEventListener('load', function () {
     generateBubbles();
-    hideBubblesOnFormScroll();
 });

@@ -105,3 +105,29 @@ button[type="submit"]:hover {
 .hide-bubble {
     visibility: hidden;
 }
+
+.b1 {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+
+.b2 {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    animation-delay: 2s;
+}
+
+.b3 {
+    position: absolute;
+    top: 80%;
+    right: 35%;
+    animation-delay: 4s;
+}
+.b4 {
+    position: absolute;
+    top: 80%;
+    right: 45%;
+    animation-delay: 4s;
+}
