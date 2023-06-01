@@ -96,7 +96,6 @@ button[type="submit"]:hover {
     }
 }
 
-
 .bubble {
     position: absolute;
     width: 40px;
@@ -172,4 +171,12 @@ button[type="submit"]:hover {
 
 .radio-button label:hover::before {
     border-color: #007bff;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 10px;
 }
